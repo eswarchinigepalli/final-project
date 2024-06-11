@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Rentals</title>
+    <style>
+        body {
+            backdrop-filter: blur(1px);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        header {
+            backdrop-filter: blur(2px);
+            background-color: #3330;
+            color: #000000;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            box-shadow: rgba(0, 0, 0, 1.1);
+            backdrop-filter: blur(3px);
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex; /* Use flexbox */
+            flex-wrap: wrap; /* Allow items to wrap */
+            justify-content: center; /* Align items horizontally in center */
+            gap: 20px;
+        }
+        .box {
+            backdrop-filter: blur(77px);
+            background-color: #ffffff3b;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 1.1);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            width: 100%; /* Ensure boxes take full width */
+            max-width: 250px; /* Limit maximum width of boxes */
+        }
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body style="background-image: url(RE.jpg); background-size: cover;">
+    <header>
+        <h1>Bike Rentals</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="about us.html">About Us</a>
+        <a href="contact us.html">Contact Us</a>
+    </nav>
+    <div class="container">
+        <div class="box" onclick="location.href='mountain_bikes.html';">
+            <h2>Mountain Bikes</h2>
+            <p>Rent a mountain bike for your outdoor adventures!</p>
+            <p>Price: starting at Rs 1000/day</p>
+        </div>
+        <div class="box" onclick="location.href='road_bikes.html';">
+            <h2>Road Bikes</h2>
+            <p>Rent a road bike for your long rides!</p>
+            <p>Price: starting at Rs 500/day</p>
+        </div>
+        <div class="box" onclick="location.href='city_bikes.html';">
+            <h2>City Bikes</h2>
+            <p>Rent a city bike for your urban explorations!</p>
+            <p>Price: starting at Rs 250/day</p>
+        </div>
+    </div>
+</body>
+</html>

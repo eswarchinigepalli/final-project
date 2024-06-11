@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bike Rentals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #33333300;
+            color: #1d7313;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            backdrop-filter: blur(4px);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff0e;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            resize: none;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body style="background-image: url(c.jpg); background-size: cover;">
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <div class="container">
+        <p>Have questions or feedback? Fill out the form below to contact us.</p>
+        <form id="contactForm" action="contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script>
+        // Add event listener to form submission
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+            // Redirect to thankyou.html
+            window.location.href = "thankyou.html";
+        });
+    </script>
+</body>
+</html>

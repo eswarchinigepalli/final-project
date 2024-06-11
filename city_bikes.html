@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Rentals</title>
+    <style>
+        body {
+            backdrop-filter: blur(3px);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #555;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+        .box {
+            background-color: #ffffff4b;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2, p {
+            margin: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .price-btn {
+            display: block;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-image: url(road.jpg); background-size:cover;">
+    <header>
+        <h1>Bike Rentals</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="about us.html">About Us</a>
+        <a href="contact us.html">Contact Us</a>
+    </nav>
+    <div class="container">
+        <!-- First Row -->
+        <div class="box">
+            <img src="r1.jpg" alt="Image 1">
+            <h2>KTM RC 390</h2>
+            <a href="payment.html" class="price-btn">Price:40/hr</a>
+        </div>
+        <div class="box">
+            <img src="r9.jpg" alt="Image 2">
+            <h2>YAMAHA R15 V4 M</h2>
+            <a href="payment.html" class="price-btn">Price:50/hr</a>
+        </div>
+        <div class="box">
+            <img src="r3.avif" alt="Image 3">
+            <h2>KTM DUKE 390</h2>
+            <a href="payment.html" class="price-btn">Price:70/hr</a>
+        </div>
+        <div class="box">
+            <img src="r4.jpg" alt="Image 4">
+            <h2>HERO XTREME 200</h2>
+            <a href="payment.html" class="price-btn">Price:40/hr</a>
+        </div>
+        <!-- Second Row -->
+        <div class="box">
+            <img src="r5.webp" alt="Image 5">
+            <h2>BAJAJ PULSAR NS200</h2>
+            <a href="payment.html" class="price-btn">Price:50/hr</a>
+        </div>
+        <div class="box">
+            <img src="r6.jpg" alt="Image 6">
+            <h2>BMW 310RR</h2>
+            <a href="payment.html" class="price-btn">Price:60/hr</a>
+        </div>
+        <div class="box">
+            <img src="r7.jpg" alt="Image 7">
+            <h2>KAWASAKI Z900</h2>
+            <a href="payment.html" class="price-btn">Price:60/hr</a>
+        </div>
+        <div class="box">
+            <img src="r8.jpg" alt="Image 8">
+            <h2>HARLEY DAVIDSON 440X</h2>
+            <a href="payment.html" class="price-btn">Price:38/hr</a>
+        </div>
+    </div>
+</body>
+</html>
